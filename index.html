@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>SAW Wheel of Doom</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="icon" href="imagen/jigsaw.ico">
+        </head>
+
+        <body>
+            <img src="imagen/Group 2.png" alt="lamp" id="lamp">
+            <audio id="audio">z
+                <source src="musica/risa_saw.mp3">
+            </audio>
+
+            <section>
+                <article class="juego">
+                    <h1 class="text" id="juego">Quieres jugar a un juego?</h1>
+                    <input type="text" id="participant" placeholder="Nombre" class="caja">
+                    <input type="button" onclick="agregarParticipante()" id="Agregar" class="boton" value="Agregar">
+                </article>
+
+                <article>
+                    <h1 class="text">Morir o vivir?</h1>
+                    <div  id="participant-list" class="participants">
+                        <ul id="participants"></ul> 
+                    </div>
+                </article>  
+            </section>
+
+            <button class="boton" id="boton" >Jugamos?</button>
+            <div id="winner">
+                <h2 class="text"></h2>
+                <p id="winner-name"></p>
+            </div>
+
+            <div class="gif">
+                <div id="bocadillo">
+                    <p><strong>Kuchau!</strong></p>
+                </div>
+                <img src="imagen/Jigsaw.gif" id="gif">
+            </div>
+
+            <section class="teleVideo">
+                <img class="tele" src="imagen/tele.png" alt="tele">
+                <video id="videoSaw">
+                    <source src="imagen/video saw.mp4" type="video/mp4">
+                </video>
+                <button class="tv-button1" onclick="playVideo()"><strong>PLAY</strong></button>
+                <a href="http://127.0.0.1:5500/Wheel%20Of%20Doom/index.html"><button class="tv-button2"><strong>RESTART</strong></button></a>
+            </section>
+
+            <script src="script.js"></script>
+        </body>
+    </html>
+
+
